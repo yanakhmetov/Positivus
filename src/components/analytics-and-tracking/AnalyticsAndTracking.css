@@ -1,0 +1,480 @@
+:root {
+    --size-aat: 0.33;
+    --color-seo-elements: #b9ff66;
+}
+
+.AnalyticsAndTracking-container-1 {
+    position: relative;
+    width: calc(400px * var(--size-aat));
+    height: calc(400px * var(--size-aat));
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* background-color: antiquewhite; */
+    /* margin: 100px auto; */
+}
+
+.AnalyticsAndTracking-container-2 {
+    width: calc(400px * var(--size-aat));
+    height: calc(400px * var(--size-aat));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.analytics-and-tracking {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transform: scale(var(--size-aat));
+    top: calc(((-400px + (400px * var(--size-aat)))) / 2);
+    left: calc(((-400px + (400px * var(--size-aat)))) / 2);
+}
+
+/**********************************/
+
+.aat-block-container {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.three-ball-aat {
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.diagrams-aat-block {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball-aat-block {
+    width: 10px;
+    height: 10px;
+    background-color: #b9ff66;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: 1px solid black;
+}
+
+/**************************************/
+
+.aat-block-1 {
+    /* display: none; */
+    z-index: 1;
+    width: 200px;
+    height: 120px;
+    top: 80px;
+    left: 40px;
+    transform: rotate(-10deg);
+}
+
+.first-diagram-aat {
+    width: 80%;
+    height: 80%;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.first-diagram-aat-block {
+    width: 80%;
+    height: 14%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.first-diagram-aat-block-1 {
+    background-color: #b9ff66;
+    width: 0%;
+    height: 50%;
+}
+
+.first-diagram-aat-block-2 {
+    background-color: black;
+    width: 0%;
+    height: 50%;
+}
+.fdab1 {
+    animation: fdab-animation 16s infinite linear alternate;
+}
+.fdab2 {
+    animation: fdab-animation 16s 2s infinite linear alternate;
+}
+.fdab3 {
+    animation: fdab-animation 16s 4s infinite linear alternate;
+}
+.fdab4 {
+    animation: fdab-animation 16s 6s infinite linear alternate;
+}
+.fdab5 {
+    animation: fdab-animation 16s 8s infinite linear alternate;
+}
+.fdab6 {
+    animation: fdab-animation 16s 10s infinite linear alternate;
+}
+.fdab7 {
+    animation: fdab-animation 16s 12s infinite linear alternate;
+}
+.fdab8 {
+    animation: fdab-animation 16s 14s infinite linear alternate;
+}
+
+@keyframes fdab-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/********************************************/
+.aat-block-2 {
+    /* display: none; */
+    width: 140px;
+    height: 100px;
+    top: 80px;
+    right: 30px;
+    z-index: 2;
+    transform: rotate(5deg);
+}
+
+.second-diagram-aat-block {
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-sin {
+    position: absolute;
+    width: 226px;
+    height: auto;
+    left: 0;
+    top: 5px;
+    animation: sin-aat-animation 20s infinite linear alternate;
+}
+
+.second-sin {
+    position: absolute;
+    width: 226px;
+    height: auto;
+    left: 0;
+    top: 15px;
+    animation: sin-aat-animation 20s infinite linear alternate-reverse;
+}
+
+@keyframes sin-aat-animation {
+    0% {
+        left: 0;
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        left: -114px;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/****************************************/
+
+.aat-block-3 {
+    width: 140px;
+    height: 140px;
+    top: 150px;
+    right: 130px;
+    z-index: 4;
+    transform: rotate(4deg);
+}
+
+.third-diagram-aat-block {
+    width: 120px;
+    height: 85px;
+    /* border: 1px solid black; */
+    position: relative;
+    overflow: hidden;
+}
+
+.third-diagram-att-block-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: t-d-att-b-1 10s infinite linear;
+}
+@keyframes t-d-att-b-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+.third-diagram-att-block-2 {
+    position: absolute;
+    top: -4px;
+    right: -9px;
+    width: 50%;
+    height: 50%;
+    animation: t-d-att-b-2 10s infinite ease;
+}
+
+@keyframes t-d-att-b-2 {
+    0% {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    10% {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    20% {
+        top: -4px;
+        right: -9px;
+        width: 50%;
+        height: 50%;
+    }
+    80% {
+        top: -4px;
+        right: -9px;
+        width: 50%;
+        height: 50%;
+    }
+    90% {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*************************************/
+
+.aat-block-4 {
+    width: 95px;
+    height: 140px;
+    top: 178px;
+    right: 40px;
+    z-index: 3;
+    transform: rotate(-3deg);
+}
+
+.four-diagram-aat-block {
+    width: 80px;
+    height: 80%;
+    border-bottom: 1px solid black;
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.four-diagram-aat-block-squire-1,
+.four-diagram-aat-block-squire-3,
+.four-diagram-aat-block-squire-5 {
+    width: 6px;
+    height: 0%;
+    background-color: black;
+}
+
+.four-diagram-aat-block-squire-2,
+.four-diagram-aat-block-squire-4,
+.four-diagram-aat-block-squire-6 {
+    width: 6px;
+    height: 0%;
+    background-color: #b9ff66;
+}
+
+.four-diagram-aat-block-squire-1 {
+    animation: four-diagram-att-block-squire-animation 10s infinite linear alternate;
+}
+.four-diagram-aat-block-squire-2 {
+    animation: four-diagram-att-block-squire-animation 10s 2s infinite linear alternate-reverse;
+}
+.four-diagram-aat-block-squire-3 {
+    animation: four-diagram-att-block-squire-animation 10s 4s infinite linear alternate;
+}
+.four-diagram-aat-block-squire-4 {
+    animation: four-diagram-att-block-squire-animation 10s 6s infinite linear alternate-reverse;
+}
+.four-diagram-aat-block-squire-5 {
+    animation: four-diagram-att-block-squire-animation 10s 8s infinite linear alternate;
+}
+.four-diagram-aat-block-squire-6 {
+    animation: four-diagram-att-block-squire-animation 10s 10s infinite linear alternate-reverse;
+}
+@keyframes four-diagram-att-block-squire-animation {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+/*********************************************/
+.aat-block-5 {
+    width: 100px;
+    height: 140px;
+    top: 200px;
+    left: 50px;
+    z-index: 5;
+    transform: rotate(-2deg);
+}
+
+.five-diagram-aat-block {
+    width: 80px;
+    height: 80%;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.five-diagram-aat-block-squire-1,
+.five-diagram-aat-block-squire-3,
+.five-diagram-aat-block-squire-5,
+.five-diagram-aat-block-squire-7,
+.five-diagram-aat-block-squire-9,
+.five-diagram-aat-block-squire-11,
+.five-diagram-aat-block-squire-13,
+.five-diagram-aat-block-squire-15,
+.five-diagram-aat-block-squire-17,
+.five-diagram-aat-block-squire-19 {
+    width: 5%;
+    height: 0%;
+    background-color: black;
+}
+.five-diagram-aat-block-squire-2,
+.five-diagram-aat-block-squire-4,
+.five-diagram-aat-block-squire-6,
+.five-diagram-aat-block-squire-8,
+.five-diagram-aat-block-squire-10,
+.five-diagram-aat-block-squire-12,
+.five-diagram-aat-block-squire-14,
+.five-diagram-aat-block-squire-16,
+.five-diagram-aat-block-squire-18,
+.five-diagram-aat-block-squire-20 {
+    width: 5%;
+    height: 0%;
+    background-color: #b9ff66;
+}
+.five-diagram-aat-block-squire-1 {
+    animation: five-diagram-aat-block-squire-animation 10s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-2 {
+    animation: five-diagram-aat-block-squire-animation 10s 0.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-3 {
+    animation: five-diagram-aat-block-squire-animation 10s 1s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-4 {
+    animation: five-diagram-aat-block-squire-animation 10s 1.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-5 {
+    animation: five-diagram-aat-block-squire-animation 10s 2s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-6 {
+    animation: five-diagram-aat-block-squire-animation 10s 2.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-7 {
+    animation: five-diagram-aat-block-squire-animation 10s 3s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-8 {
+    animation: five-diagram-aat-block-squire-animation 10s 3.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-9 {
+    animation: five-diagram-aat-block-squire-animation 10s 4s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-10 {
+    animation: five-diagram-aat-block-squire-animation 10s 4.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-11 {
+    animation: five-diagram-aat-block-squire-animation 10s 5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-12 {
+    animation: five-diagram-aat-block-squire-animation 10s 5.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-13 {
+    animation: five-diagram-aat-block-squire-animation 10s 6s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-14 {
+    animation: five-diagram-aat-block-squire-animation 10s 6.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-15 {
+    animation: five-diagram-aat-block-squire-animation 10s 7s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-16 {
+    animation: five-diagram-aat-block-squire-animation 10s 7.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-17 {
+    animation: five-diagram-aat-block-squire-animation 10s 8s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-18 {
+    animation: five-diagram-aat-block-squire-animation 10s 8.5s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-19 {
+    animation: five-diagram-aat-block-squire-animation 10s 9s infinite linear alternate;
+}
+.five-diagram-aat-block-squire-20 {
+    animation: five-diagram-aat-block-squire-animation 10s 9.5s infinite linear alternate;
+}
+
+@keyframes five-diagram-aat-block-squire-animation {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}

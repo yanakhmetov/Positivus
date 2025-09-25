@@ -1,0 +1,33 @@
+.contact-us-block {
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-us-section {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-us-form {
+        margin: 0;
+        padding: 40px 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    :root {
+        --size-sun: 0.8 !important;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 768px) {
+    .sun-contact {
+        display: none !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .sun-contact {
+        display: none !important;
+    }
+}

@@ -1,0 +1,14 @@
+.clever-image{
+
+    /* background-color: green; */
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    box-shadow: 3px 3px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    opacity: 1;
+    /* background-image: url('./image-clever/thirdGif.gif'); */
+    background-color: #73ac2d;
+    background-blend-mode: hard-light;
+    background-size: cover;
+}

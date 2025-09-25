@@ -1,0 +1,366 @@
+.services-block {
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.services-card-block {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.services-bottom-blocks {
+    margin: 20px auto 0 auto;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-bottom-block-1 {
+    /* width: 40%; */
+    height: auto;
+}
+.services-bottom-block-1 h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.services-bottom-block-1 p {
+    width: auto;
+    margin: 20px 0;
+}
+.services-bottom-block-1 Button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+/****************************************************/
+
+.cards-services-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    place-items: center;
+}
+.card-services {
+    height: 220px;
+    width: 392px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.bg-card-1 {
+    background-color: #f3f3f3;
+}
+.bg-card-2 {
+    background-color: #b9ff66;
+}
+.bg-card-3 {
+    background-color: #191a23;
+}
+.card-services {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card-services:hover {
+    transition: all 0.3s;
+    transform: scale(1.01);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+.card-text-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card-text-h2 {
+    display: flex;
+    flex-direction: column;
+}
+.card-text-h2 h2 {
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 3px;
+    display: inline;
+    white-space: nowrap;
+}
+.bg-h2-1 div h2 {
+    background-color: #b9ff66;
+}
+.bg-h2-2 div h2 {
+    background-color: #ffffff;
+}
+
+.card-learn-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.molao-1 {
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #b9ff66;
+    background-color: black;
+}
+.molao-2 {
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: black;
+    background-color: white;
+}
+.card-color-text {
+    color: white;
+}
+
+/**************************************************/
+
+@media (min-width: 1281px) {
+    .services-bottom-block-1 {
+        width: 40%;
+        height: auto;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .cards-services-block {
+        grid-template-columns: 1fr 1fr;
+    }
+    .services-bottom-block-1 {
+        width: 40%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --size-lmth: 0.9 !important;
+        --size-cca: 0.3 !important;
+        --size-seo: 0.3 !important;
+        --size-ppca: 0.3 !important;
+        --size-em: 0.3 !important;
+        --size-smm: 0.3 !important;
+        --size-aat: 0.3 !important;
+    }
+    .cards-services-block {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-services {
+        height: 160px;
+        width: 330px;
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .card-text-h2 h2 {
+        font-size: 18px;
+    }
+
+    .card-learn-more {
+        font-size: 14px;
+    }
+    .molao-1 {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .molao-2 {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    /******************************/
+
+    .services-bottom-block-1 h3 {
+        font-size: 28px;
+    }
+
+    .services-bottom-block-1 p {
+        font-size: 14px;
+    }
+    .services-bottom-block-1 Button {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .services-bottom-block-1 {
+        width: 40%;
+        height: auto;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 768px) {
+    :root {
+        --size-lmth: 0.9 !important;
+        --size-cca: 0.33 !important;
+        --size-seo: 0.33 !important;
+        --size-ppca: 0.33 !important;
+        --size-em: 0.33 !important;
+        --size-smm: 0.33 !important;
+        --size-aat: 0.33 !important;
+    }
+    .cards-services-block {
+        grid-template-columns: 1fr;
+    }
+    .card-services {
+        height: 180px;
+        width: 350px;
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+
+    .card-text-h2 h2 {
+        font-size: 22px;
+    }
+
+    .card-learn-more {
+        font-size: 16px;
+    }
+    .molao-1 {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .molao-2 {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .section-heading-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 0 20px;
+        width: inherit !important;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    /***********************************/
+    .services-bottom-blocks {
+        flex-direction: column;
+        min-width: 380px !important;
+        max-width: 500px !important;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .services-bottom-block-1 h3 {
+        font-size: 28px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .services-bottom-block-1 p {
+        font-size: 14px;
+        display: block;
+    }
+    .services-bottom-block-1 Button {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    :root {
+        --size-lmth: 0.7 !important;
+        --size-cca: 0.25 !important;
+        --size-seo: 0.25 !important;
+        --size-ppca: 0.25 !important;
+        --size-em: 0.25 !important;
+        --size-smm: 0.25 !important;
+        --size-aat: 0.25 !important;
+    }
+    .cards-services-block {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+    }
+    .card-services {
+        height: 160px;
+        width: 250px !important;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .card-text-h2 h2 {
+        font-size: 14px;
+    }
+
+    .card-learn-more {
+        font-size: 12px;
+    }
+    .molao-1 {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .molao-2 {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .section-heading-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 0 20px;
+        width: inherit !important;
+        max-width: 500px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    /*************************/
+    .services-bottom-blocks {
+        flex-direction: column;
+        min-width: 280px !important;
+        max-width: 400px !important;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .services-bottom-block-1 h3 {
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .services-bottom-block-1 p {
+        font-size: 12px;
+        display: block;
+    }
+    .services-bottom-block-1 Button {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}

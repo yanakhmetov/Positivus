@@ -1,0 +1,138 @@
+:root {
+    --size-lmth: 1;
+}
+
+.LetsMakeThingsHappen-container-1 {
+    position: relative;
+    width: calc(400px * var(--size-lmth));
+    height: calc(400px * var(--size-lmth));
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* background-color: antiquewhite; */
+    /* margin: 100px auto; */
+}
+
+.LetsMakeThingsHappen-container-2 {
+    width: calc(400px * var(--size-lmth));
+    height: calc(400px * var(--size-lmth));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.lets-make-things-happen {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transform: scale(var(--size-lmth));
+    top: calc(((-400px + (400px * var(--size-lmth)))) / 2);
+    left: calc(((-400px + (400px * var(--size-lmth)))) / 2);
+}
+
+.path-lmth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.human-lmth {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-1,
+.icon-2,
+.icon-3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    offset-rotate: 0deg;
+}
+
+.icon-1 {
+    animation: icon-1-2-3-animation 25s infinite linear alternate;
+    offset-path: path(
+        "m283.13293,45.23013c2.16223,37.79831 22.19569,36.51551 28.40095,40.81145c6.20526,4.29595 27.4273,11.67553 23.62768,32.69691c-3.79961,21.02138 -18.29716,35.95827 -25.77565,36.99284"
+    );
+}
+
+.icon-2 {
+    animation: icon-1-2-3-animation 25s infinite linear alternate-reverse;
+    offset-path: path(
+        "m352.03676,215.75457c-23.52649,28.57143 -99.3921,19.45289 -99.69605,19.45289c-35.86625,-0.60791 -25.57657,25.88052 -25.83586,25.53191c24.71768,40.02396 60.18237,13.37386 60.18237,74.16414"
+    );
+}
+.icon-3 {
+    animation: icon-1-2-3-animation 25s infinite linear alternate;
+    offset-path: path(
+        "m41.86603,221.7479c10.03018,44.78487 65.64506,50.51719 65.43991,50.27106c28.92485,-3.01304 38.77162,19.25797 58.25999,19.01184c32.61738,13.28283 31.79682,59.45445 12.71872,59.20832"
+    );
+}
+
+@keyframes icon-1-2-3-animation {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+.star-lmth-1,
+.star-lmth-2,
+.star-lmth-3 {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    offset-rotate: 0deg;
+    animation: icon-1-2-3-animation 25s linear infinite;
+}
+
+.star-lmth-1 {
+    offset-path: path(
+        "m200.02194,163.57566c0,0 -162.90052,-1.53765 -165.45472,-24.54532c-0.23765,0.029 -3.91955,-23.80671 165.45371,-23.63625c160.90929,1.81817 165.19903,22.10216 165.45372,24.09079c-1.05962,21.81807 -165.45271,24.09078 -165.45271,24.09078z"
+    );
+}
+
+.star-lmth-2 {
+    offset-path: path(
+        "m200.02194,194.75854c0,0 -162.90052,-1.53765 -165.45472,-24.54532c-0.23765,0.029 -3.91955,-23.80671 165.45371,-23.63625c160.90929,1.81817 165.19903,22.10216 165.45372,24.09079c-1.05962,21.81807 -165.45271,24.09078 -165.45271,24.09078z"
+    );
+}
+
+.star-lmth-3 {
+    offset-path: path(
+        "m200.02194,225.94141c0,0 -162.90052,-1.53765 -165.45472,-24.54532c-0.23765,0.029 -3.91955,-23.80671 165.45371,-23.63625c160.90929,1.81817 165.19903,22.10216 165.45372,24.09079c-1.05962,21.81807 -165.45271,24.09078 -165.45271,24.09078z"
+    );
+}
+
+/**************************************************/
+
+.human-eyes-lmth {
+    animation: human-eyes-lmth-animation 8s linear infinite;
+    transform-origin: 35% 35%;
+}
+
+@keyframes human-eyes-lmth-animation {
+    0% {
+        transform: rotatex(0);
+    }
+    5% {
+        transform: rotatex(90deg);
+    }
+    10%{
+        transform: rotatex(0);
+    }
+    100% {
+        transform: rotatex(0);
+    }
+}

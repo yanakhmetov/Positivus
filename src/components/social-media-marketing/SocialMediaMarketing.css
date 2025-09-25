@@ -1,0 +1,314 @@
+:root {
+    --size-smm: 0.33;
+    --color-seo-elements: #b9ff66;
+}
+
+.SocialMediaMarketing-container-1 {
+    position: relative;
+    width: calc(400px * var(--size-smm));
+    height: calc(400px * var(--size-smm));
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* background-color: black; */
+}
+
+.SocialMediaMarketing-container-2 {
+    width: calc(400px * var(--size-smm));
+    height: calc(400px * var(--size-smm));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.social-media-marketing {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transform: scale(var(--size-smm));
+    top: calc(((-400px + (400px * var(--size-smm)))) / 2);
+    left: calc(((-400px + (400px * var(--size-smm)))) / 2);
+}
+
+.photos-block {
+    width: 200px;
+    height: 140px;
+    border: 5px solid #b9ff66;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 0;
+}
+
+.p-b-1 {
+    animation: p-b-smm-animation 40s infinite linear;
+}
+.p-b-2 {
+    animation: p-b-smm-animation 40s 10s infinite linear;
+}
+.p-b-3 {
+    animation: p-b-smm-animation 40s 20s infinite linear;
+}
+.p-b-4 {
+    animation: p-b-smm-animation 40s 30s infinite linear;
+}
+
+@keyframes p-b-smm-animation {
+    0% {
+        opacity: 1;
+    }
+    23% {
+        opacity: 1;
+        transform: scale(1.1) rotate(5deg);
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/****************************/
+
+.heart-smm-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 45px;
+    border: 4px solid #b9ff66;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.h-ssm-c-1 {
+    animation: s-h-smm-animation 10s infinite linear;
+    offset: path(
+        "m85.3125,246.5332c-13.09919,-39.78555 -54.03415,-36.27506 -52.8061,-54.67771c0.40935,-40.6906 44.61911,-19.04258 49.94065,-55.58276c8.59634,-33.66962 -16.78333,-30.15913 -42.57236,-51.48719c-19.23943,-17.28734 21.69553,-16.70226 16.37398,-39.78555"
+    );
+    offset-rotate: 0deg;
+}
+
+.h-ssm-c-2 {
+    animation: s-h-smm-animation 10s infinite linear;
+    offset: path('m361.63398,215.47009c-3.66726,-28.03135 -41.63761,-21.10279 -40.37615,-36.91254c4.49898,-33.28052 44.20184,-18.03639 49.66819,-49.42814c8.83025,-28.92565 -38.44815,-18.0844 -43.73079,-48.14544c-4.26471,-23.79487 28.81145,-25.52806 23.34511,-45.35896');
+    offset-rotate: 0deg;
+}
+
+.h-ssm-c-3 {
+    animation: s-h-smm-animation 10s infinite linear;
+    offset: path('m189.07722,119.8451c-11.43603,-17.51475 28.12865,-19.08577 30.14171,-28.11388c7.17954,-19.00475 -62.77382,-8.28961 -54.05053,-26.21578c14.09145,-16.51791 66.02293,-7.81452 57.5928,-24.9808c-6.80569,-13.588 -36.38241,-16.08524 -45.10568,-27.40963');
+    offset-rotate: 0deg;
+}
+
+@keyframes s-h-smm-animation {
+    0% {
+        opacity: 0;
+        offset-distance: 0;
+        transform: scale(0.7);
+    }
+    10% {
+        opacity: 1;
+    }
+    33% {
+        transform: scale(0.8);
+    }
+    66% {
+        transform: scale(0.7);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+        offset-distance: 100%;
+    }
+}
+
+.heart-smm {
+    width: 30px;
+    height: 30px;
+}
+
+.squire-heart-smm {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid #b9ff66;
+    border-bottom: 4px solid #b9ff66;
+    bottom: -6px;
+    right: 10px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+/**********************************/
+.star-smm-container{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 25px;
+    background-color: white;
+    border: 3px solid #b9ff66;
+    border-radius: 5px;
+    bottom: 70px;
+    right: 110px;
+}
+
+.star-smm{
+    width: 15px;
+    height: 15px;
+}
+
+.star-squire-smm-block{
+    width: 8px;
+    height: 8px;
+    border-top: 4px solid #b9ff66;
+    border-left: 4px solid #b9ff66;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    transform: rotate(45deg);
+    background-color: white;
+
+}
+
+.star-smm-1{
+    animation: star-smm-1-animation 10s infinite linear;
+}
+.star-smm-2{
+    animation: star-smm-2-animation 10s infinite linear;
+}
+.star-smm-3{
+    animation: star-smm-3-animation 10s infinite linear;
+}
+.star-smm-4{
+    animation: star-smm-4-animation 10s infinite linear;
+}
+.star-smm-5{
+    animation: star-smm-5-animation 10s infinite linear;
+}
+
+@keyframes star-smm-1-animation{
+    0%{
+        fill: #b9ff66;
+    }
+    100%{
+        fill:#b9ff66;
+    }
+}
+@keyframes star-smm-2-animation{
+    0%{
+        fill: black;
+    }
+    19%{
+        fill: black;
+    }
+    20%{
+        fill: #b9ff66;
+    }
+    100%{
+        fill:#b9ff66;
+    }
+}
+@keyframes star-smm-3-animation{
+   0%{
+        fill: black;
+    }
+    39%{
+        fill: black;
+    }
+    40%{
+        fill: #b9ff66;
+    }
+    100%{
+        fill:#b9ff66;
+    }
+}
+@keyframes star-smm-4-animation{
+    0%{
+        fill: black;
+    }
+    59%{
+        fill: black;
+    }
+    60%{
+        fill: #b9ff66;
+    }
+    100%{
+        fill:#b9ff66;
+    }
+}
+@keyframes star-smm-5-animation{
+    0%{
+        fill: black;
+    }
+    79%{
+        fill: black;
+    }
+    80%{
+        fill: #b9ff66;
+    }
+    100%{
+        fill:#b9ff66;
+    }
+}
+
+/*****************************************/
+.three-balls-smm-block{
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    width: auto;
+    height: auto;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ball-smm-block{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: #b9ff66;
+    border-radius: 50%;
+    opacity: 0;
+}
+.b-smm-b-1{
+    animation: b-smm-b-animation 10s 6s infinite linear;
+}
+.b-smm-b-2{
+    animation: b-smm-b-animation 10s 3s infinite linear;
+}
+.b-smm-b-3{
+    animation: b-smm-b-animation 10s infinite linear;
+}
+
+@keyframes b-smm-b-animation {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}

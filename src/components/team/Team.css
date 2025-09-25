@@ -1,0 +1,117 @@
+.team-block {
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.team-cards {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.team-block-button {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    margin-left: 85%;
+    margin-right: 0px;
+}
+
+.team-card-animation {
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.team-card-animation:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/***************************************************/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .team-block-button {
+        margin-left: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .team-cards {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .team-text h2 {
+        font-size: 18px;
+    }
+    .team-text p {
+        font-size: 14px;
+    }
+    .team-text-about {
+        font-size: 13px;
+    }
+    .clever-image {
+        width: 70px;
+        height: 70px;
+    }
+    .team-block-button {
+        margin-left: 70%;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 768px) {
+    .team-cards {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .team-text h2 {
+        font-size: 24px;
+    }
+    .team-text p {
+        font-size: 18px;
+    }
+    .team-text-about {
+        font-size: 16px;
+    }
+    .clever-image {
+        width: 100px;
+        height: 100px;
+    }
+    .team-block-button {
+        margin-left: 60%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .team-cards {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-text h2 {
+        font-size: 24px;
+    }
+    .team-text p {
+        font-size: 18px;
+    }
+    .team-text-about {
+        font-size: 16px;
+    }
+    .clever-image {
+        width: 100px;
+        height: 100px;
+    }
+    .team-block-button {
+        margin-left: 40%;
+    }
+}

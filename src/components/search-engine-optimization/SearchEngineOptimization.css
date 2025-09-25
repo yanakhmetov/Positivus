@@ -1,0 +1,285 @@
+:root {
+  --size-seo: 0.33;
+  --color-seo-elements: #b9ff66;
+  /* --color-seo-elements: white; */
+}
+
+.SearchEngineOptimization-container-1 {
+  position: relative;
+  width: calc(400px * var(--size-seo));
+  height: calc(400px * var(--size-seo));
+  overflow: hidden;
+}
+.SearchEngineOptimization-container-2 {
+  width: calc(400px * var(--size-seo));
+  height: calc(400px * var(--size-seo));
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+/******************************************/
+.search-engine-optimization {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(var(--size-seo));
+  top: calc(((-400px + (400px * var(--size-seo)))) / 2);
+  left: calc(((-400px + (400px * var(--size-seo)))) / 2);
+}
+
+.paths-seo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.path-seo-settings {
+  fill: none;
+  stroke: black;
+  stroke-width: 4.5;
+}
+
+.balls-seo {
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.ball-seo-settings {
+  stroke: #000;
+  fill: #000000;
+  stroke-width: 15px;
+}
+
+/*********************************/
+
+.spark-seo {
+  z-index: 10;
+  width: 25px;
+  height: 50px;
+}
+
+.spark-color {
+  stroke: #000;
+  fill: var(--color-seo-elements);
+}
+
+.spark-seo-1 {
+  scale: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spark-animation 20s linear infinite;
+  z-index: 4;
+  offset-path: path(
+    "m67.04988,86.09756l-0.22061,62.6404c0.22061,0.23893 0.22061,18.27868 20.07634,18.68944c19.85572,0.41075 19.85572,-0.41077 29.78357,0.20536c9.92786,0.61615 26.69491,-3.9073 26.69491,12.93885c0,16.84616 -0.44122,7.80439 -0.2206,22.38624c0.22061,14.58185 -3.77106,21.97549 15.66394,21.97549c19.435,0 43.20434,0.82152 54.05168,0.61613c10.84735,-0.20538 30.66605,-1.23189 30.66605,19.40838c-0.00001,20.64026 -0.44123,15.70397 0.22063,25.36409c0.66186,9.66013 6.38192,15.40339 30.66606,15.40339c24.28413,0 52.94975,0.41075 74.34863,0.61613"
+  );
+}
+.spark-seo-2 {
+  scale: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spark-animation 20s linear infinite;
+  z-index: 4;
+  offset-path: path(
+    "m315.36585,113.90243l-0.2439,114.39024c-0.2439,13.41568 0.96051,24.63415 -24.63415,24.63415c-25.59465,0 -44.87804,-0.00001 -56.34146,0.24389c-11.46342,0.24391 -9.5122,10.86756 -10,30.00002c-0.48779,19.13245 3.90244,36.58536 -21.21952,36.34145c-25.12196,-0.24391 -5.73895,0.2439 -25.12194,0.2439c-19.38299,0 -55.12193,0.48781 -72.92682,0.24391c-17.80489,-0.2439 -33.90245,1.5591 -33.90245,-16.82927c0,-18.38837 0.48781,-48.29269 0.73171,-54.39024c0.2439,-6.09756 -2.13744,-14.87805 -20.73171,-14.87805c-18.59426,0 -33.17073,-0.00001 -33.41463,-0.73171"
+  );
+}
+.spark-seo-3 {
+  scale: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spark-animation 20s linear infinite;
+  z-index: 4;
+  offset-path: path(
+    "m109.02439,126.58537c0,0 -0.4878,113.91105 -0.2439,113.41463c0.2439,-0.49642 -2.73276,20.73171 18.78049,20.73171c21.51324,0 53.16847,-0.00001 52.43902,-0.24391c-0.72945,-0.2439 18.78049,1.51604 18.78049,-18.29268c0,-19.80872 -0.4878,-40.48781 -0.2439,-37.80488c0.2439,2.68293 -0.44826,-18.08833 18.53658,-19.02439c18.98484,-0.93605 136.34147,0.73172 150.24391,0"
+  );
+}
+
+@keyframes spark-animation {
+  0% {
+    offset-distance: 0%;
+  }
+  50% {
+    offset-distance: 100%;
+  }
+  100% {
+    offset-distance: 0%;
+  }
+}
+
+.search-seo {
+  position: absolute;
+  margin: 0;
+  width: 38%;
+  z-index: 12;
+  left: 100px;
+  top: 25px;
+  transform: rotate(40deg);
+  animation: search-seo-animation 4s linear infinite;
+}
+
+.search-seo-color {
+  fill: var(--color-seo-elements);
+}
+
+@keyframes search-seo-animation {
+  0% {
+  }
+  50% {
+    transform: scale(0.9) rotate(40deg);
+  }
+  100% {
+    transform: scale(1) rotate(40deg);
+  }
+}
+
+/****************************************************/
+.black-star-seo {
+  position: absolute;
+  width: 45px;
+  height: auto;
+  right: 10px;
+  top: 100px;
+  animation: black-white-star-seo-animation 50s infinite linear;
+}
+
+.white-star-seo {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 30px;
+  left: 85px;
+  animation: black-white-star-seo-animation 50s infinite linear;
+}
+
+@keyframes black-white-star-seo-animation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.white-star-settings {
+  fill: var(--color-seo-elements);
+}
+
+/**********************************************/
+
+.shining-star-seo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  height: auto;
+}
+
+.shining-star-seo-one {
+  top: 150px;
+  left: 20px;
+  animation: shining-star-seo-animation 4s linear infinite;
+}
+
+.shining-star-seo-two {
+  top: 40px;
+  right: 100px;
+  animation: shining-star-seo-animation 4s linear 0.5s infinite;
+}
+
+.shining-star-seo-three {
+  bottom: 70px;
+  right: 140px;
+  animation: shining-star-seo-animation 4s linear 1s infinite;
+}
+
+@keyframes shining-star-seo-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*************************************/
+.gear-seo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 35px;
+  left: 0;
+  animation: gear-seo-animation 20s linear infinite;
+}
+
+@keyframes gear-seo-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*******************************************************/
+
+.smile-seo {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 50px;
+}
+
+.smile-seo-settings {
+  fill: var(--color-seo-elements);
+}
+
+.eyes-smile {
+  animation: eyes-smile-animation 5s infinite linear;
+  transform-origin: 35% 35%;
+}
+
+@keyframes eyes-smile-animation {
+  0% {
+    transform: rotatex(0deg);
+  }
+  5% {
+    transform: rotatex(90deg);
+  }
+  10% {
+    transform: rotatex(0deg);
+  }
+  100% {
+    transform: rotatex(0deg);
+  }
+}
+
+
+/*******************************************/
+
+.shining-star-settings {
+  stroke: #000;
+  stroke-width: 1.5;
+  fill: #000000;
+}
+
+.gear-settings {
+  stroke: #080808;
+  stroke-width: 6;
+  fill: var(--color-seo-elements);
+}
+
+/**********************************************/

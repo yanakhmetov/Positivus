@@ -1,0 +1,105 @@
+:root {
+    --size-notion: 0.75;
+}
+
+.Notion-container-1 {
+    position: relative;
+    width: calc(210px * var(--size-notion));
+    height: calc(100px * var(--size-notion));
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: antiquewhite; */
+    /* z-index: 15; */
+    
+}
+.Notion-container-1:hover {
+    border: 1px solid black;
+    background-color: #b9ff66;
+    transition: all 0.3s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    /* background: url('./image-notion/last-cadr.png'), #b9ff66; */
+    background-size: cover;
+    /* z-index: 15; */
+}
+
+.Notion-container-2 {
+    width: calc(210px * var(--size-notion));
+    height: calc(100px * var(--size-notion));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
+}
+
+.notion-block{
+    /* border: 1px solid white; */
+    position: absolute;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    width: 210px;
+    height: 100px;
+    transition: all 0.3s;
+    transform: scale(var(--size-notion));
+    top: calc(((-100px + (100px * var(--size-notion)))) / 2);
+    left: calc(((-210px + (210px * var(--size-notion))))/2);
+    z-index: 11;
+    /* background-color: white; */
+}
+
+
+.notion-background{
+    position: absolute;
+    right: 0;
+    width: 145px;
+    height: inherit;
+    z-index: 12;
+}
+
+.notion-letter-N{
+    position: absolute;
+    top: 25px;
+    left: 11px;
+    width: 50px;
+    height: 50px;
+    animation: notion-letter-N-animation 20s linear infinite;
+    /* z-index: 12; */
+}
+
+@keyframes notion-letter-N-animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.notion-block-2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 14;
+    background-color: #b9ff66;
+    transition: all 0.3s;
+}
+
+.notion-block-2:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.notion-last-cadr{
+    width: 100%;
+    height: 100%;
+}

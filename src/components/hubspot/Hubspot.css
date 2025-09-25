@@ -1,0 +1,56 @@
+:root {
+    --size-hubspot: 1.5;
+}
+
+.Hubspot-container-1 {
+    position: relative;
+    width: calc(105px * var(--size-hubspot));
+    height: calc(50px * var(--size-hubspot));
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: antiquewhite;
+}
+.Hubspot-container-1:hover {
+    border: 1px solid black;
+    background-color: #b9ff66;
+    transition: all 0.3s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.Hubspot-container-2 {
+    width: calc(105px * var(--size-hubspot));
+    height: calc(50px * var(--size-hubspot));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+/*************************************************/
+
+.hubspot-block{
+    /* border: 1px solid white; */
+    position: absolute;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    width: 105px;
+    height: 50px;
+    background: url('./image-hubspot/Hubspot2.gif');
+    transition: all 0.3s;
+    transform: scale(var(--size-hubspot));
+    top: calc(((-50px + (50px * var(--size-hubspot)))) / 2);
+    left: calc(((-105px + (105px * var(--size-hubspot)))) / 2);
+    background-size: contain;
+}
+
+.hubspot-block:hover{
+    background: url('./image-hubspot/last-cadr.png'), #b9ff66;
+    background-size: contain;
+}

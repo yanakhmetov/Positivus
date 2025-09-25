@@ -1,0 +1,536 @@
+:root{
+    --size-ppca: 0.33;
+}
+
+.PayPerClickAdvertising-container-1{
+    position: relative;
+    width: calc(400px * var(--size-ppca));
+    height: calc(400px * var(--size-ppca));
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.PayPerClickAdvertising-container-2{
+    width: calc(400px * var(--size-ppca));
+    height: calc(400px * var(--size-ppca));
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.PayPerClickAdvertising {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform: scale(var(--size-ppca));
+    top: calc(((-400px + (400px * var(--size-ppca)))) /2 );
+    left: calc(((-400px + (400px * var(--size-ppca)))) /2 );
+}
+
+.sait-ppca {
+    width: 260px;
+    height: 160px;
+    margin: 0;
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 3;
+}
+.sait-ppca-block-1 {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sait-ppca-block-2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sait-ppca-block-1-circle {
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+.bg-color-circle-ppca-1 {
+    background-color: #b9ff66;
+}
+.bg-color-circle-ppca-2 {
+    background-color: #b9ff66;
+}
+.bg-color-circle-ppca-3 {
+    background-color: #b9ff66;
+}
+
+.google-ppca {
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+}
+
+.google-pcca-settings {
+    animation: google-color-ppca-animation 20s infinite linear;
+}
+
+@keyframes google-color-ppca-animation {
+    0% {
+        fill: rgb(138, 132, 132);
+    }
+    4% {
+        fill: rgb(138, 132, 132);
+    }
+    5% {
+        fill: #b9ff66;
+    }
+    20% {
+        fill: #b9ff66;
+    }
+    25% {
+        fill: rgb(138, 132, 132);
+    }
+    100% {
+        fill: rgb(138, 132, 132);
+    }
+}
+
+.yandex-ppca {
+    width: 41px;
+    height: 41px;
+    z-index: 5;
+}
+
+.yandex-pcca-settings {
+    animation: yandex-color-ppca-animation 20s infinite linear;
+}
+
+@keyframes yandex-color-ppca-animation {
+    0% {
+        fill: rgb(138, 132, 132);
+    }
+    27% {
+        fill: rgb(138, 132, 132);
+    }
+    29% {
+        fill: rgb(138, 132, 132);
+    }
+    30% {
+        fill: #b9ff66;
+    }
+    49% {
+        fill: #b9ff66;
+    }
+    50% {
+        fill: rgb(138, 132, 132);
+    }
+    77% {
+        fill: rgb(138, 132, 132);
+    }
+    79% {
+        fill: rgb(138, 132, 132);
+    }
+    80% {
+        fill: #b9ff66;
+    }
+    97% {
+        fill: #b9ff66;
+    }
+    100% {
+        fill: rgb(138, 132, 132);
+    }
+}
+.safari-ppca {
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    opacity: 1;
+}
+
+.safari-ppca-settings {
+    animation: safari-color-ppca-animation 20s infinite linear;
+}
+
+@keyframes safari-color-ppca-animation {
+    0% {
+        fill: rgb(138, 132, 132);
+    }
+    52% {
+        fill: rgb(138, 132, 132);
+    }
+    54% {
+        fill: rgb(138, 132, 132);
+    }
+    55% {
+        fill: #b9ff66;
+    }
+    74% {
+        fill: #b9ff66;
+    }
+    75% {
+        fill: rgb(138, 132, 132);
+    }
+    100% {
+        fill: rgb(138, 132, 132);
+    }
+}
+
+.mouse-ppca {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    z-index: 15;
+    top: 215px;
+    left: 290px;
+    animation: mouse-ppca-animation 20s infinite linear;
+}
+
+@keyframes mouse-ppca-animation {
+    0% {
+        opacity: 1;
+        top: 205px;
+        left: 110px;
+        transform: scale(1) rotate(-45deg);
+    }
+    5% {
+        transform: scale(0.8) rotate(-45deg);
+    }
+    10% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    23% {
+        top: 205px;
+        left: 110px;
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+        top: 205px;
+        left: 201px;
+    }
+    25% {
+        opacity: 1;
+        top: 205px;
+        left: 201px;
+        transform: scale(1) rotate(-45deg);
+    }
+    30% {
+        transform: scale(0.8) rotate(-45deg);
+    }
+    35% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+        top: 205px;
+        left: 201px;
+    }
+    49% {
+        opacity: 0;
+        top: 205px;
+        left: 290px;
+    }
+    50% {
+        opacity: 1;
+        top: 205px;
+        left: 290px;
+        transform: scale(1) rotate(-45deg);
+    }
+    55% {
+        transform: scale(0.8) rotate(-45deg);
+    }
+    60% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+        top: 205px;
+        left: 290px;
+    }
+    74% {
+        opacity: 0;
+        top: 205px;
+        left: 201px;
+    }
+    75% {
+        opacity: 1;
+        top: 205px;
+        left: 201px;
+        transform: scale(1) rotate(-45deg);
+    }
+    80% {
+        transform: scale(0.8) rotate(-45deg);
+    }
+    85% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+        top: 205px;
+        left: 201px;
+    }
+    100% {
+        top: 205px;
+        left: 110px;
+        opacity: 0;
+        transform: scale(1) rotate(-45deg);
+    }
+}
+
+.refresh-ppca-1 {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 174px;
+    left: 75px;
+    z-index: 3;
+    animation: refresh-ppca-1-animation 20s infinite linear;
+}
+
+.refresh-ppca-2 {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 174px;
+    left: 161.5px;
+    z-index: 3;
+    animation: refresh-ppca-2-animation 20s infinite linear;
+}
+
+.refresh-ppca-3 {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 172.5px;
+    right: 78.5px;
+    z-index: 3;
+    animation: refresh-ppca-3-animation 20s infinite linear;
+}
+
+@keyframes refresh-ppca-1-animation {
+    0% {
+        opacity: 0;
+    }
+    3% {
+        transform: rotate(0deg);
+    }
+    4% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes refresh-ppca-2-animation {
+    0% {
+        opacity: 0;
+    }
+    27% {
+        transform: rotate(0deg);
+    }
+    29% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    77% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    79% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    97% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes refresh-ppca-3-animation {
+    0% {
+        opacity: 0;
+    }
+    52% {
+        transform: rotate(0deg);
+    }
+    54% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    74% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/************************************************/
+
+.elipses-ppca {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.elipses-star-ppca {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #b9ff66;
+}
+
+.e-s-ppca-1 {
+    animation: e-s-ppca-animation 12s infinite 0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,133.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-2 {
+    animation: e-s-ppca-animation 12s infinite 0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,155.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-3 {
+    animation: e-s-ppca-animation 12s infinite 0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,177.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-4 {
+    animation: e-s-ppca-animation 12s infinite 0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,199.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-5 {
+    animation: e-s-ppca-animation 12s infinite 0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,221.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-6 {
+    animation: e-s-ppca-animation 12s infinite  0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,243.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-7 {
+    animation: e-s-ppca-animation 12s infinite  0s linear;
+    z-index: 2;
+    offset-path: path("m101.09382,265.37298c0,0 -98.59382,-0.13222 -98.59382,-20.56142c0,-20.4292 98.81996,-20.16346 98.59382,-20.29612c-0.22613,-0.13266 98.36769,0.13222 98.36769,20.42877c0,20.29655 -98.36769,20.42877 -98.36769,20.42877z");
+}
+
+.e-s-ppca-8 {
+    animation: e-s-ppca-2-animation 24s infinite  0s linear;
+    z-index: 2;
+    offset-path: path("m234.47371,94.9801c0,0 95.26324,0 95.00026,-0.24317c0.26298,0.24317 35.52617,-0.29388 35.52617,26.02193c0,26.31581 0,105.80029 -0.26298,105.55712");
+}
+
+.e-s-ppca-9 {
+    animation: e-s-ppca-2-animation 24s infinite  0s linear;
+    z-index: 2;
+    offset-path: path("m273.94743,314.68424c0,0 -203.68439,0 -203.94737,-0.23831c0.26298,0.23831 -33.94757,3.40136 -33.94757,-23.44593");
+}
+
+@keyframes e-s-ppca-animation {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+@keyframes e-s-ppca-2-animation {
+    0% {
+        offset-distance: 0%;
+    }
+    50% {
+        offset-distance: 100%;
+    }
+    100% {
+        offset-distance: 0%;
+    }
+}
+
+/******************************************/
+
+.gear-ppca{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    z-index: 1;
+    right: 20px;
+    bottom: 60px;
+    animation: gear-ppca-animation 20s infinite linear;
+}
+
+@keyframes gear-ppca-animation {
+    0% {
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

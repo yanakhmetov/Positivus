@@ -1,0 +1,240 @@
+.header-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.block-navigate-digital-book {
+    position: relative;
+    /* background-color: aqua; */
+    z-index: 25;
+    /* width: 600px; */
+    height: 400px;
+}
+
+.block-navigate {
+    position: absolute;
+    width: inherit;
+    top: 0;
+    font-size: 54px;
+    font-weight: bold;
+    animation: block-navigate-animation 1s linear;
+}
+
+.block-our-digital {
+    position: absolute;
+    width: inherit;
+    font-size: 18px;
+    top: 200px;
+    animation: block-our-digital-animation 1s linear;
+}
+
+.button-book-header {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    animation: button-book-animation 1s linear;
+}
+
+@keyframes block-navigate-animation {
+    0% {
+        opacity: 0;
+        top: -150px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes block-our-digital-animation {
+    0% {
+        opacity: 0;
+        left: -150px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes button-book-animation {
+    0% {
+        opacity: 0;
+        bottom: -150px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 1281px) {
+    .header-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+
+    .block-navigate-digital-book {
+        position: relative;
+        /* background-color: aqua; */
+        z-index: 25;
+        width: 600px;
+        height: 400px;
+    }
+
+    .block-navigate {
+        position: absolute;
+        width: inherit;
+        top: 0;
+        font-size: 54px;
+        font-weight: bold;
+        animation: block-navigate-animation 1s linear;
+    }
+
+    .block-our-digital {
+        position: absolute;
+        width: inherit;
+        font-size: 18px;
+        top: 200px;
+        animation: block-our-digital-animation 1s linear;
+    }
+
+    .button-book-header {
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        color: white;
+        animation: button-book-animation 1s linear;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    :root {
+        --size-rupor: 0.6 !important
+    ;
+    }
+
+    .block-navigate-digital-book {
+        width: 550px;
+        height: 350px;
+    }
+
+    .block-navigate {
+        top: 0;
+        font-size: 44px;
+    }
+
+    .block-our-digital {
+        font-size: 16px;
+        top: 160px;
+    }
+
+    .button-book-header {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --size-rupor: 0.55 !important
+    ;
+    }
+
+    .block-navigate-digital-book {
+        width: 400px;
+        height: 280px;
+    }
+
+    .block-navigate {
+        top: 0;
+        font-size: 32px;
+    }
+
+    .block-our-digital {
+        font-size: 14px;
+        top: 120px;
+    }
+
+    .button-book-header {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 768px) {
+    .header-block {
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+    }
+    :root {
+        --size-rupor: 0.7 !important
+    ;
+    }
+
+    .block-navigate-digital-book {
+        width: inherit;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .block-navigate {
+        width: 400px;
+        top: 0;
+        font-size: 24px;
+    }
+
+    .block-our-digital {
+        width: 400px;
+        font-size: 14px;
+        top: 100px;
+    }
+
+    .button-book-header {
+        width: 180px;
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    .header-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    :root {
+        --size-rupor: 0.5 !important;
+    }
+
+    .block-navigate-digital-book {
+        width: 300px;
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+    .block-navigate {
+        top: 0;
+        font-size: 24px;
+    }
+
+    .block-our-digital {
+        font-size: 12px;
+        top: 90px;
+    }
+
+    .button-book-header {
+        font-size: 14px !important;
+    }
+}
