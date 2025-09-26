@@ -9,7 +9,7 @@ import Mouse from './image-ppca/Mouse.jsx'
 import Refresh from './image-ppca/Refresh.jsx'
 import Elipses from './image-ppca/Elipses.jsx'
 
-import Gear from './image-ppca/gear.jsx'
+import Gear from './image-ppca/Gear.jsx'
 
 
 function PayPerClickAdvertising() {
