@@ -112,6 +112,7 @@
         height: 100px;
     }
     .team-block-button {
-        margin: 0 auto;
+        margin: 20px auto 0 auto !important;
+        display: block;
     }
 }
