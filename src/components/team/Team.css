@@ -112,6 +112,6 @@
         height: 100px;
     }
     .team-block-button {
-        margin-left: 40%;
+        margin: 0 auto;
     }
 }
